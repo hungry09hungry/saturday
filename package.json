@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "build": "npx @11ty/eleventy",
+        "serve": "npx @11ty/eleventy --serve"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^3.1.6",
+        "@11ty/eleventy-img": "^7.0.0"
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resource/style/default.css">
+    
+        <link rel="stylesheet" href="/resource/style/gallery.css">
+    
+    <title>saturday</title>
+</head>
+<body>
+    <div class="background">
+        <img src="/resource/img/aha-hand.webp" id="aha-hand" class="bgimgs">
+        <img src="/resource/img/aha.webp" id="aha" class="bgimgs">
+        <img src="/resource/img/tv.webp" id="tv" class="bgimgs">
+        <img src="/resource/img/screen.webp" id="screen" class="bgimgs">
+        <main>
+            <nav>
+                <a href="/index.html">index</a>
+                <a href="/gallery/index.html">gallery</a>
+                <a href="/journal/index.html">journal</a>
+</nav>
+            
+              <header>
+    <a href="/gallery/index.html">← all albums</a>
+    <h1>2026</h1>
+    
+  </header>
+
+
+    <ul class="photos">
+      
+        <li>
+          <a href="/gallery/2026/beach-day.png" data-desc="">
+            <img src="/gallery/2026/beach-day.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/bordeom.png" data-desc="">
+            <img src="/gallery/2026/bordeom.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/braiding%20before%20bed.png" data-desc="">
+            <img src="/gallery/2026/braiding%20before%20bed.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/city-street.png" data-desc="">
+            <img src="/gallery/2026/city-street.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/deer-figurine.png" data-desc="">
+            <img src="/gallery/2026/deer-figurine.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/fairy-queen-replace.png" data-desc="">
+            <img src="/gallery/2026/fairy-queen-replace.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/mickey-sketch.jpg" data-desc="">
+            <img src="/gallery/2026/mickey-sketch.jpg" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/more-model-progress.png" data-desc="">
+            <img src="/gallery/2026/more-model-progress.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/oekaki.png" data-desc="">
+            <img src="/gallery/2026/oekaki.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/rain-rain-go-away.png" data-desc="">
+            <img src="/gallery/2026/rain-rain-go-away.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/shoes.png" data-desc="">
+            <img src="/gallery/2026/shoes.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/strawberry.png" data-desc="">
+            <img src="/gallery/2026/strawberry.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/swing.png" data-desc="">
+            <img src="/gallery/2026/swing.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/2026/what-a-baby.png" data-desc="">
+            <img src="/gallery/2026/what-a-baby.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+    </ul>
+
+
+    
+    <span>page 1 of 1</span>
+    
+
+  <dialog id="viewer">
+    <img alt="">
+    <p></p>
+    <div id="closebtn">&#8855;</div>
+  </dialog>
+
+<script>
+  const viewer = document.getElementById("viewer");
+  const viewerImg = viewer.querySelector("img");
+  const viewerDesc = viewer.querySelector("p");
+
+  document.querySelectorAll(".photos a").forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+
+      const desc = a.dataset.desc;
+      viewerImg.src = a.href;
+      viewerImg.alt = desc || "";
+      viewerDesc.textContent = desc || "";
+      viewerDesc.hidden = !desc;
+
+      viewer.showModal();
+    });
+  });
+
+  viewer.addEventListener("click", () => viewer.close());
+</script>
+</body>
+</html>
+
+        </main>
+    </div>
+</body>
+</html>

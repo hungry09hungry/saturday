@@ -1,0 +1,145 @@
+body:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+
+
+dialog {
+    overscroll-behavior: contain;
+}
+
+body:has(dialog[open]) main {
+  overflow: hidden;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+#gallerylist, .photos {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+
+.photos, #gallerylist a:visited, #gallerylist a {
+  color: rgb(23, 114, 99)
+}
+
+h1 {
+  text-align: right;
+}
+
+.photos, #gallerylist a:hover {
+  color: rgb(31, 55, 165);
+}
+
+.photos {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+	gap: 0.313rem;
+	padding: 0.125rem;
+}
+
+.photos img {
+	width: 100%;
+    aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+#viewer[open] {
+	background-color: transparent;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+  z-index: 1000;
+}
+
+#viewer img {
+  	max-width: 90vw;
+	  max-height: 90vh;
+	  object-fit: contain;
+}
+
+#viewer::backdrop {
+	background-color: #000000b0;
+}
+
+#viewer p {
+	color: white;
+	text-shadow: none;
+	background-color: #0000008c;
+	padding: 0.25rem;
+	overflow-y: scroll;
+	height: 200px;
+	width: 300px;
+	margin: 0.75rem;
+	padding: 20px;
+	font-size: x-large;
+}
+
+dialog p[hidden] { display: none; }
+
+.gallery img:hover {
+    filter: saturate(1.2);
+}
+
+#closebtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 34px;
+	color: #fdfdfd;
+}
+
+#closebtn:hover {
+  color: black;
+  cursor: url('/resource/cur/link.png'), default;
+}
+
+figcaption {
+	display: none;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    z-index: 1000;
+}
+
+  .lightbox-overlay.open {
+    display: flex;
+  }
+ 
+.lightbox-overlay img {
+	max-width: 90vw;
+	max-height: 90vh;
+	object-fit: contain;
+}
+ 
+.lightbox-cap {
+	color: #9ee290;
+	text-align: center;
+	text-shadow: none;
+	margin-left: 5%;
+	font-size: 1.563rem;
+}
+ 
+  .lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    color: #f0f0f0;
+    font-size: 2rem;
+    cursor: url('/resource/cur/link.png'), default;
+    background: none;
+    border: none;
+  }
