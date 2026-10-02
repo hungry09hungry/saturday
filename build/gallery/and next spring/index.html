@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resource/style/default.css">
+    
+        <link rel="stylesheet" href="/resource/style/gallery.css">
+    
+    <title>saturday</title>
+</head>
+<body>
+    <div class="background">
+        <img src="/resource/img/aha-hand.webp" id="aha-hand" class="bgimgs">
+        <img src="/resource/img/aha.webp" id="aha" class="bgimgs">
+        <img src="/resource/img/tv.webp" id="tv" class="bgimgs">
+        <img src="/resource/img/screen.webp" id="screen" class="bgimgs">
+        <main>
+            <nav>
+                <a href="/index.html">index</a>
+                <a href="/gallery/index.html">gallery</a>
+                <a href="/journal/index.html">journal</a>
+</nav>
+            
+              <header>
+    <a href="/gallery/index.html">← all albums</a>
+    <h1>and next spring</h1>
+    <p>this was all part of a picture book i was working on. never finished it. the general plot focused on the growing romantic relationship between a young girl and a shapeshifting ermine woman. T~T but i got in over my head and stopped in the middle of drawing the whole thing! well, that&#39;s not such a bad thing since i made a lot of fun drawings anyway &amp; im proud of them :&gt;</p>
+  </header>
+
+
+    <ul class="photos">
+      
+        <li>
+          <a href="/gallery/and%20next%20spring/elaine-ref-1.png" data-desc="">
+            <img src="/gallery/and%20next%20spring/elaine-ref-1.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/and%20next%20spring/mlem.png" data-desc="">
+            <img src="/gallery/and%20next%20spring/mlem.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/and%20next%20spring/moon.png" data-desc="">
+            <img src="/gallery/and%20next%20spring/moon.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+    </ul>
+
+
+    
+    <span>page 1 of 1</span>
+    
+
+  <dialog id="viewer">
+    <img alt="">
+    <p></p>
+    <div id="closebtn">&#8855;</div>
+  </dialog>
+
+<script>
+  const viewer = document.getElementById("viewer");
+  const viewerImg = viewer.querySelector("img");
+  const viewerDesc = viewer.querySelector("p");
+  const closebtn = document.getElementById("closebtn");
+
+  document.querySelectorAll(".photos a").forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+
+      const desc = a.dataset.desc;
+      viewerImg.src = a.href;
+      viewerImg.alt = desc || "";
+      viewerDesc.textContent = desc || "";
+      viewerDesc.hidden = !desc;
+
+      viewer.showModal();
+    });
+  });
+
+  closebtn.addEventListener("click", () => viewer.close());
+</script>
+</body>
+</html>
+
+        </main>
+    </div>
+</body>
+</html>

@@ -56,6 +56,12 @@
         </li>
       
         <li>
+          <a href="/gallery/2026/dance.png" data-desc="">
+            <img src="/gallery/2026/dance.png" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
           <a href="/gallery/2026/deer-figurine.png" data-desc="">
             <img src="/gallery/2026/deer-figurine.png" width="300" alt="" loading="lazy">
           </a>
@@ -132,6 +138,7 @@
   const viewer = document.getElementById("viewer");
   const viewerImg = viewer.querySelector("img");
   const viewerDesc = viewer.querySelector("p");
+  const closebtn = document.getElementById("closebtn");
 
   document.querySelectorAll(".photos a").forEach(a => {
     a.addEventListener("click", e => {
@@ -147,7 +154,7 @@
     });
   });
 
-  viewer.addEventListener("click", () => viewer.close());
+  closebtn.addEventListener("click", () => viewer.close());
 </script>
 </body>
 </html>

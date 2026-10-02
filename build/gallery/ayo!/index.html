@@ -66,6 +66,24 @@ https://booth.pm/en/items/8257688" loading="lazy">
         </li>
       
         <li>
+          <a href="/gallery/ayo!/house-from-front.jpg" data-desc="">
+            <img src="/gallery/ayo!/house-from-front.jpg" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/ayo!/house-interior.jpg" data-desc="">
+            <img src="/gallery/ayo!/house-interior.jpg" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
+          <a href="/gallery/ayo!/house-slice.jpg" data-desc="">
+            <img src="/gallery/ayo!/house-slice.jpg" width="300" alt="" loading="lazy">
+          </a>
+        </li>
+      
+        <li>
           <a href="/gallery/ayo!/still-a-ways-to-go.png" data-desc="">
             <img src="/gallery/ayo!/still-a-ways-to-go.png" width="300" alt="" loading="lazy">
           </a>
@@ -94,6 +112,7 @@ https://booth.pm/en/items/8257688" loading="lazy">
   const viewer = document.getElementById("viewer");
   const viewerImg = viewer.querySelector("img");
   const viewerDesc = viewer.querySelector("p");
+  const closebtn = document.getElementById("closebtn");
 
   document.querySelectorAll(".photos a").forEach(a => {
     a.addEventListener("click", e => {
@@ -109,7 +128,7 @@ https://booth.pm/en/items/8257688" loading="lazy">
     });
   });
 
-  viewer.addEventListener("click", () => viewer.close());
+  closebtn.addEventListener("click", () => viewer.close());
 </script>
 </body>
 </html>
