@@ -4,5 +4,21 @@ h1 {
 
 p {
     text-indent: 2em;
-    line-height: 1.2em;
+    line-height: 32px;
+}
+
+#misu {
+	color: #8c428b;
+	border: 2px ridge #e9bbe4;
+	padding: 5px;
+}
+#tira {
+    color: rgb(49, 149, 207);
+    	border: 2px ridge #2d74f8;
+	padding: 5px;
+}
+
+#notes {
+    border-top: 1px dotted black;
+    margin-top: 2px;
 }

@@ -1,0 +1,21 @@
+ul,ol {
+    margin: 1.2rem;
+}
+
+ul {
+	list-style-type: "❦ ";
+}
+
+dd {
+	text-indent: 1.5rem;
+}
+
+dt {
+	color: orange;
+}
+
+li::marker {
+	color: rgb(168, 207, 81);
+	text-shadow: 1px 1px 1px #0f5aa9;
+	font-size: 1.2rem;
+}
