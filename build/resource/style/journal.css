@@ -7,18 +7,31 @@ p {
     line-height: 32px;
 }
 
-#misu {
+tira, misu {
+	margin: 3px;
+	display: inline-block;
+	text-indent: 0px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+misu {
 	color: #8c428b;
 	border: 2px ridge #e9bbe4;
-	padding: 5px;
+
 }
-#tira {
+tira {
     color: rgb(49, 149, 207);
-    	border: 2px ridge #2d74f8;
-	padding: 5px;
+    border: 2px ridge #2d74f8;
 }
 
 #notes {
     border-top: 1px dotted black;
     margin-top: 2px;
+}
+
+li {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
 }
