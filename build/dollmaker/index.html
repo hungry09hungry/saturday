@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dollmaker</title>
+  <link rel="stylesheet" href="./dollmaker.css">
+</head>
+<body>
+  <noscript>this game requires javascript to play!</noscript>
+  <img id="logo" src="tot-logo.png" width="200">
+  <main class="dollmaker">
+    <section id="doll">
+      <img class="dollPart" id="extra1" style="z-index:10;" src="">
+      <img class="dollPart" id="hat" style="z-index: 9;" src="">
+      <img class="dollPart" id="outfit" style="z-index: 8;" src="./outfit/vampire.png">
+      <img class="dollPart" id="hair" style="z-index: 8;" src="./hair/smallfro/red.png">
+      <img class="dollPart" id="mouth" style="z-index: 6;" src="./mouth/funny.png">
+      <img class="dollPart" id="eye" style="z-index: 5;" src="./eye/black.png">
+      <img class="dollPart" id="brow" style="z-index: 4;" src="./brow/fluff-happy.png">
+      <img class="dollPart" id="pumpkin" style="z-index: 3;" src="./pumpkin/orange.png">
+      <img class="dollPart" id="base" style="z-index: 2;" src="./base/human/dark.png">
+      <img class="dollPart" id="bg" style="z-index: 1;" src="./bg/trick-or-treat.png">
+    </section>
+    <section id="closet">
+      <h2>closet</h2>
+      <section id="bases" data-target="base">
+        <h3>skins</h3>
+        <img class="thumb" src="./base/human/thumb/medium-thumb.png">
+        <img class="thumb" src="./base/human/thumb/light-thumb.png">
+        <img class="thumb" src="./base/human/thumb/dark-thumb.png">
+      </section>
+      <section id="hairstyles" data-target="hair">
+        <h3>hair</h3>
+        <img class="thumb" src="./hair/bald/thumb/black-thumb.png">
+        <img class="thumb" src="./hair/bald/thumb/brown-thumb.png">
+        <img class="thumb" src="./hair/bald/thumb/blonde-thumb.png">
+        <img class="thumb" src="./hair/bald/thumb/red-thumb.png">
+
+        <img class="thumb" src="./hair/smallfro/thumb/black-thumb.png">
+        <img class="thumb" src="./hair/smallfro/thumb/brown-thumb.png">
+        <img class="thumb" src="./hair/smallfro/thumb/blonde-thumb.png">
+        <img class="thumb" src="./hair/smallfro/thumb/red-thumb.png">
+
+        <img class="thumb" src="./hair/waveshort/thumb/brown-thumb.png">
+        <img class="thumb" src="./hair/waveshort/thumb/black-thumb.png">
+        <img class="thumb" src="./hair/waveshort/thumb/blonde-thumb.png">
+        <img class="thumb" src="./hair/waveshort/thumb/red-thumb.png">
+
+        <img class="thumb" src="./hair/ppuff/thumb/brown-thumb.png">
+        <img class="thumb" src="./hair/ppuff/thumb/black-thumb.png">
+        <img class="thumb" src="./hair/ppuff/thumb/blonde-thumb.png">
+        <img class="thumb" src="./hair/ppuff/thumb/red-thumb.png">
+
+        <img class="thumb" src="./hair/2braid/thumb/brown-thumb.png">
+        <img class="thumb" src="./hair/2braid/thumb/black-thumb.png">
+        <img class="thumb" src="./hair/2braid/thumb/blonde-thumb.png">
+        <img class="thumb" src="./hair/2braid/thumb/red-thumb.png">
+
+      </section>
+      <section id="outfits" data-target="outfit">
+        <h3>outfits</h3>
+        <img class="thumb" data-clip="./outfit/astronaut-clip.png" src="./outfit/thumb/astronaut-thumb.png">
+        <img class="thumb" data-clip="./outfit/magician-clip.png" src="./outfit/thumb/magician-thumb.png">
+        <img class="thumb" src="./outfit/thumb/vampire-thumb.png">
+        <img class="thumb" data-clip="./outfit/ghostly-clip.png" src="./outfit/thumb/ghostly-thumb.png">
+        <img class="thumb" src="./outfit/thumb/bdaysuit-thumb.png">
+
+      </section>
+      <section id="acc1" data-target="extra1">
+        <img class="thumb" src="./outfit/thumb/broom-thumb.png">
+        <img class="thumb" src="./outfit/thumb/wand-thumb.png">
+      </section>
+      <section id="eyes" data-target="eye">
+        <h3>eyes</h3>
+        <img class="thumb" src="./eye/thumb/black-thumb.png">
+        <img class="thumb" src="./eye/thumb/blue-thumb.png">
+        <img class="thumb" src="./eye/thumb/brown-thumb.png">
+        <img class="thumb" src="./eye/thumb/green-thumb.png">
+        <img class="thumb" src="./eye/thumb/closed-thumb.png">
+      </section>
+      <section id="mouths" data-target="mouth">
+        <h3>mouths</h3>
+        <img class="thumb" src="./mouth/thumb/happy-thumb.png">
+        <img class="thumb" src="./mouth/thumb/happy-vamp-thumb.png">
+        <img class="thumb" src="./mouth/thumb/funny-thumb.png">
+      </section>
+    </section>
+  </main>
+<aside>
+  <p><button id="takepic">take a picture</button></p>
+  <p>ehehe im still testing this but its fun to play around with</p>
+  <p><a href="/index.html">back</a></p>
+</aside>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas-pro/dist/html2canvas-pro.min.js"></script>
+  <script src="dollmaker.js"></script>
+</body>
+</html>
