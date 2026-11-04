@@ -44,12 +44,13 @@ h1, h2, h3, h4, h5, h6, nav {
 
 
 .background {
-  position: relative;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100vh;
-  aspect-ratio: 16 / 9;
+	position: relative;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100vh;
+	aspect-ratio: 16 / 9;
+	transition: ease all .5s;
 }
 
 .bgimgs {
@@ -96,3 +97,16 @@ section {
     text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+	#aha, #aha-hand {
+		display: none;
+	}
+	.background {
+	height: 108vh;
+	left: -52%;
+	aspect-ratio: 9 / 16;
+	width: 169%;
+	transform: translateX(0%);
+	position: fixed;
+	}
+}
