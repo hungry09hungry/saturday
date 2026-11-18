@@ -13,12 +13,12 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
-	cursor: url('/resource/cur/silly.png'), default;
+	cursor: url('/resource/cur/binky-cursor.png'), default;
 }
 
-a, .gallery img {
+/* a, .gallery img {
 	cursor: url('/resource/cur/link.png'), default;
-}
+} */
 
 body {
 	height: 100%;
@@ -39,8 +39,6 @@ body {
 h1, h2, h3, h4, h5, h6, nav {
 	font-family: kiwisoda;
 }
-
-
 
 
 .background {
