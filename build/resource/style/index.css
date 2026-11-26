@@ -96,6 +96,6 @@ ol {
 }
 #stamps img:hover {
   filter:grayscale(0%);
-  cursor: url('/resource/cur/link.png'), default;
+  cursor: url('/resource/cur/binky-cursor-link.png'), default;
 }
 

@@ -16,9 +16,9 @@
 	cursor: url('/resource/cur/binky-cursor.png'), default;
 }
 
-/* a, .gallery img {
-	cursor: url('/resource/cur/link.png'), default;
-} */
+ a, .gallery img {
+	cursor: url('/resource/cur/binky-cursor-link.png'), default;
+}
 
 body {
 	height: 100%;

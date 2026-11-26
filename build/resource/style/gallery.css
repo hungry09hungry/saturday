@@ -94,7 +94,7 @@ dialog p[hidden] { display: none; }
 
 #closebtn:hover {
   color: black;
-  cursor: url('/resource/cur/link.png'), default;
+  cursor: url('/resource/cur/binky-cursor-link.png'), default;
 }
 
 figcaption {
